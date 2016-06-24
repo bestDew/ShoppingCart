@@ -1,0 +1,35 @@
+//
+//  ShoppingDemo-Prefix.pch
+//  ShoppingDemo
+//
+//  Created by 张日奎 on 16/6/22.
+//  Copyright © 2016年 博创联动. All rights reserved.
+//
+
+#ifndef ShoppingDemo_Prefix_pch
+#define ShoppingDemo_Prefix_pch
+
+#import <Masonry.h>
+
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#define limitW(x) x*ScreenWidth/375.0
+#define limitH(x) x*ScreenHeight/667.0
+
+#define W(obj)   (!obj?0:(obj).frame.size.width)
+#define H(obj)   (!obj?0:(obj).frame.size.height)
+#define X(obj)   (!obj?0:(obj).frame.origin.x)
+#define Y(obj)   (!obj?0:(obj).frame.origin.y)
+#define XW(obj) (X(obj)+W(obj))
+#define YH(obj) (Y(obj)+H(obj))
+
+#define TopSpacing 40.0f
+#define BottomSpacing 40.0f
+#define LeftSpacing 20.0f
+#define RightSpacing  20.0f
+
+#define Font(x) [UIFont systemFontOfSize:x]
+#define ThemeColor [UIColor colorWithRed:0.88 green:0.36 blue:0.38 alpha:1.00]
+
+#endif /* ShoppingDemo_Prefix_pch */
